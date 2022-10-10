@@ -9,8 +9,8 @@ public class Course {
 
     public void doIt(Team team) {
         for (Competitor c : team.getCompetitors()) {
-            for (Session o : sessions) {
-                o.doIt(c);
+            for (Session s : sessions) {
+                s.doIt(c);
                 if (!c.isOnQuestions()) break;
             }
         }
